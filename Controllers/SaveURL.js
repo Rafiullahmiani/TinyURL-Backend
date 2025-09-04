@@ -6,7 +6,7 @@ export const SaveURL = async (req, res) => {
     const newURL = new URLs({ longUrl: longUrl });
     const savedRef = await newURL.save();
     const shortURLId = savedRef._id;
-    const shortURL = `http://localhost:5050/url/${shortURLId}`;
+    const shortURL = `http://localhost:8080/url/${shortURLId}`;
     res.status(200).json({
       ok: true,
       shortURL: shortURL,
