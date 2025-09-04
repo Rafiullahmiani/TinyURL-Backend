@@ -16,6 +16,7 @@ app.use(express.json());
 app.use("/url", URLRoute);
 
 app.listen(8080, () => {
-  console.log("I am workinf");
+  console.log("Server is running on port 8080");
 });
+
 
