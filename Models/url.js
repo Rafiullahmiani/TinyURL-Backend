@@ -8,3 +8,4 @@ const URLSchema = new mongoose.Schema({
 });
 
 export const URLs = mongoose.model("urls", URLSchema);
+
